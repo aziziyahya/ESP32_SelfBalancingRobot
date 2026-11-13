@@ -1,0 +1,27 @@
+# Build & IDE
+build/
+*.tmp
+*.hex
+*.bin
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Private Academic Deliverables (Reports, Slides, Presentations)
+docs/
+*.pdf
+*.pptx
+*.ppt
+*.docx
+*.doc
+
+# Media & Videos (Private Demonstration Recordings)
+media/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
