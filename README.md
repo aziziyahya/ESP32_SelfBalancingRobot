@@ -20,6 +20,20 @@
 - **Autonomous Navigation State Machine:** Fully autonomous behavior switching between Search, High-Thrust Attack (dynamic tilt offset of +3.5°), and Perimeter Escape routines using dual ground IR sensors.
 - **Over-The-Air (OTA) Web Telemetry & Dynamic Tuning:** Embedded Wi-Fi Access Point and Web Server (`192.168.4.1`) allowing live parameter calibration (Kp, Ki, Kd, setpoint trim, motor deadband) stored persistently in non-volatile flash storage (`Preferences`).
 
+<div align="center">
+  <table>
+    <tr>
+      <th align="center">Front Chassis & Sensing</th>
+      <th align="center">Rear Power & Motor Driver</th>
+    </tr>
+    <tr>
+      <td align="center"><img src="assets/robot_front.png" width="340" alt="Robot Front View" /></td>
+      <td align="center"><img src="assets/robot_back.png" width="340" alt="Robot Rear View" /></td>
+    </tr>
+  </table>
+  <p><em>Figure 1: Physical Prototype Assembly — Front (MPU-6050 & VL53L0X ToF) and Rear (Dual 18650 Li-ion & TB6612FNG Driver)</em></p>
+</div>
+
 ---
 
 ## 🏗️ System Architecture
@@ -64,6 +78,11 @@ graph TD
 ```
 
 </details>
+
+<div align="center">
+  <img src="assets/robot_circuit.png" alt="Circuit Schematic" width="100%" />
+  <p><em>Figure 2: Complete Electronic Circuit Schematic & Dual I²C Bus Architecture</em></p>
+</div>
 
 ---
 
@@ -140,12 +159,18 @@ The ESP32 broadcasts a private Wi-Fi network with an interactive web UI served f
 - **Real-Time PID Calibration:** Sliders for Kp, Ki, Kd, setpoint, trim angle, max speed, deadband, and acceleration rate.
 - **Flash Persistence:** One-click save writes calibration values to ESP32 NVS using the `Preferences` API, retaining optimal parameters across power cycles.
 
+<div align="center">
+  <img src="assets/robot_dashboard.png" alt="Embedded Web Dashboard" width="380" />
+  <p><em>Figure 3: Live Wi-Fi Telemetry & Dynamic PID Calibration Dashboard (192.168.4.1)</em></p>
+</div>
+
 ---
 
 ## 📁 Repository Structure
 
 ```
 ESP32_SelfBalancingRobot/
+├── assets/                            # High-res hardware photos, schematics & dashboard UI
 ├── firmware/
 │   └── SelfBalancingRobot/
 │       └── SelfBalancingRobot.ino     # Complete firmware (PID, FSM, Web Dashboard)
