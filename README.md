@@ -12,7 +12,7 @@
 
 ## 📌 Project Overview
 
-**M4T-CH4** is a high-performance, two-wheeled autonomous inverted pendulum robot. The core engineering challenge demands overcoming the inherent dynamic instability of an inverted pendulum while executing a high-torque mechanical objective: **identifying, pursuing, and entirely pushing five distinct obstacles out of a 1-meter radius circular tournament arena** within strict time limits without crossing perimeter boundaries.
+**M4T-CH4** is a high-performance, two-wheeled autonomous inverted pendulum robot. The core technical challenge demands overcoming the inherent dynamic instability of an inverted pendulum while executing a high-torque mechanical objective: **identifying, pursuing, and entirely pushing five distinct obstacles out of a 1-meter radius circular tournament arena** within strict time limits without crossing perimeter boundaries.
 
 ### Key Highlights
 - **Real-Time Deterministic Control:** Dual-core FreeRTOS architecture running a high-speed 200 Hz (5 ms loop period) complementary filter and PID stabilization loop on one core, while serving an asynchronous Wi-Fi Web Dashboard on the secondary core.
