@@ -38,8 +38,12 @@
 
 ## 🏗️ System Architecture
 
+<div align="center">
+
 <details>
-<summary><b>📐 Click to expand System Architecture Diagram</b></summary>
+<summary align="center"><b>📐 Click to expand System Architecture Diagram</b></summary>
+
+<br/>
 
 ```mermaid
 graph TD
@@ -79,6 +83,8 @@ graph TD
 
 </details>
 
+</div>
+
 <div align="center">
   <img src="assets/robot_circuit.png" alt="Circuit Schematic" width="100%" />
   <p><em>Figure 2: Complete Electronic Circuit Schematic & Dual I²C Bus Architecture</em></p>
@@ -117,8 +123,12 @@ Evaluated at a deterministic 200 Hz update frequency ($\Delta t = 5\text{ ms}$).
 
 ### 3. Finite State Machine (FSM)
 
+<div align="center">
+
 <details>
-<summary><b>🔄 Click to expand FSM State Machine Diagram</b></summary>
+<summary align="center"><b>🔄 Click to expand FSM State Machine Diagram</b></summary>
+
+<br/>
 
 ```mermaid
 stateDiagram-v2
@@ -149,6 +159,8 @@ stateDiagram-v2
 ```
 
 </details>
+
+</div>
 
 ---
 
