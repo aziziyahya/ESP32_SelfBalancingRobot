@@ -23,33 +23,15 @@
 <div align="center">
   <table>
     <tr>
-      <th align="center">Front Chassis & Sensing</th>
-      <th align="center">Isometric Prototype View</th>
-      <th align="center">Rear Power & Motor Driver</th>
+      <th align="center">Front Chassis & Sensing Layout</th>
+      <th align="center">3/4 Isometric Prototype View</th>
     </tr>
     <tr>
-      <td align="center"><img src="assets/robot_front.png" width="240" alt="Robot Front View" /></td>
-      <td align="center"><img src="assets/robot_isometric.png" width="240" alt="Robot Isometric Prototype View" /></td>
-      <td align="center"><img src="assets/robot_back.png" width="240" alt="Robot Rear View" /></td>
+      <td align="center"><img src="assets/robot_front.png" width="340" alt="Robot Front View" /></td>
+      <td align="center"><img src="assets/robot_isometric.png" width="340" alt="Robot Isometric View" /></td>
     </tr>
   </table>
-  <p><em>Figure 1: Physical Prototype Assembly — Front (Sensing & Chassis), 3/4 Isometric Perspective, and Rear (Dual 18650 Li-ion & TB6612FNG Driver)</em></p>
-</div>
-
-<div align="center">
-
-<details>
-<summary align="center"><b>📐 Click to expand Orthographic Dimension Drawing (Appendix B)</b></summary>
-
-<br/>
-
-<div align="center">
-  <img src="assets/robot_dimension_drawing.png" alt="Orthographic Dimension Drawing" width="460" />
-  <p><em>Chassis Mechanical Orthographic Layout with Millimeter Dimensioning</em></p>
-</div>
-
-</details>
-
+  <p><em>Figure 1: Physical Prototype Assembly (Presentation Slide 11) — Front Sensing & Chassis Layout and 3/4 Isometric Workbench View</em></p>
 </div>
 
 ---
@@ -222,8 +204,17 @@ The ESP32 broadcasts a private Wi-Fi network with an interactive web UI served f
 - **Flash Persistence:** One-click save writes calibration values to ESP32 NVS using the `Preferences` API, retaining optimal parameters across power cycles.
 
 <div align="center">
-  <img src="assets/robot_dashboard.png" alt="Embedded Web Dashboard" width="380" />
-  <p><em>Figure 4: Live Wi-Fi Telemetry & Dynamic PID Calibration Dashboard (192.168.4.1)</em></p>
+  <table>
+    <tr>
+      <th align="center">Live Telemetry & Diagnostics</th>
+      <th align="center">Dynamic PID Calibration Interface</th>
+    </tr>
+    <tr>
+      <td align="center"><img src="assets/robot_dashboard.png" width="300" alt="Live Telemetry Dashboard" /></td>
+      <td align="center"><img src="assets/robot_pid_tuning.png" width="220" alt="PID Tuning Interface" /></td>
+    </tr>
+  </table>
+  <p><em>Figure 4: Asynchronous Wi-Fi Web Dashboard (Presentation Slide 13) — Live Diagnostics (192.168.4.1) & Real-Time Gain Tuning</em></p>
 </div>
 
 ---
