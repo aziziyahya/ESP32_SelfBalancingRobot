@@ -332,9 +332,9 @@ Developed as part of **NMT22104: Data Acquisition Technology & Analysis II** wit
 
 | Contributor | Matric ID | Focus Area |
 |---|---|---|
-| **Nik Mohamad Azizi Nik Yahya** | `241503239` | Sensor Integration, Hardware Assembly & Firmware Architecture|
-| **Akmal Haikal Mohd Muzammer** | `241501824` | PID Control, Hardware Design & Testing |
-| **Afifah Nadhirah Selbini** | `241501822` | Documentation |
+| **Nik Mohamad Azizi Bin Nik Yahya** | `241503239` | Sensor Integration, Hardware Assembly & Firmware Architecture|
+| **Akmal Haikal Bin Mohd Muzammer** | `241501824` | PID Control, Hardware Design & Testing |
+| **Afifah Nadhirah Binti Selbini** | `241501822` | Documentation |
 
 **Project Supervisor:** Mr. Suhaizal bin Abu Hassan  
 *Faculty of Electronic Engineering Technology, Universiti Malaysia Perlis*
