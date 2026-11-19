@@ -206,15 +206,23 @@ The ESP32 broadcasts a private Wi-Fi network with an interactive web UI served f
 <div align="center">
   <table>
     <tr>
-      <th align="center">Live Telemetry & Diagnostics</th>
-      <th align="center">Dynamic PID Calibration Interface</th>
+      <th align="center">1. Telemetry Monitoring</th>
+      <th align="center">2. PID Parameter Tuning</th>
     </tr>
     <tr>
-      <td align="center"><img src="assets/robot_dashboard.png" width="300" alt="Live Telemetry Dashboard" /></td>
-      <td align="center"><img src="assets/robot_pid_tuning.png" width="220" alt="PID Tuning Interface" /></td>
+      <td align="center"><img src="assets/robot_dashboard_monitoring.png" width="280" alt="Telemetry Monitoring" /></td>
+      <td align="center"><img src="assets/robot_dashboard_pid.png" width="210" alt="PID Tuning Interface" /></td>
+    </tr>
+    <tr>
+      <th align="center">3. Motor & Deadband Calibration</th>
+      <th align="center">4. System Maintenance & Logs</th>
+    </tr>
+    <tr>
+      <td align="center"><img src="assets/robot_dashboard_motor.png" width="210" alt="Motor Calibration" /></td>
+      <td align="center"><img src="assets/robot_dashboard_update.png" width="310" alt="Manual Update Dashboard" /></td>
     </tr>
   </table>
-  <p><em>Figure 4: Asynchronous Wi-Fi Web Dashboard (Presentation Slide 13) — Live Diagnostics (192.168.4.1) & Real-Time Gain Tuning</em></p>
+  <p><em>Figure 4: Complete Asynchronous Web Dashboard Suite (Presentation Slide 13) — Live Telemetry, Dynamic PID Tuning, Motor Deadband Calibration, and System Maintenance</em></p>
 </div>
 
 ---
