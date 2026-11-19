@@ -27,8 +27,8 @@
       <th align="center">3/4 Isometric Prototype View</th>
     </tr>
     <tr>
-      <td align="center"><img src="assets/robot_front.png" width="340" alt="Robot Front View" /></td>
-      <td align="center"><img src="assets/robot_isometric.png" width="340" alt="Robot Isometric View" /></td>
+      <td align="center"><img src="assets/slide_11_robot_front.png" width="340" alt="Robot Front View" /></td>
+      <td align="center"><img src="assets/slide_11_robot_isometric.png" width="340" alt="Robot Isometric View" /></td>
     </tr>
   </table>
   <p><em>Figure 1: Physical Prototype Assembly (Presentation Slide 11) — Front Sensing & Chassis Layout and 3/4 Isometric Workbench View</em></p>
@@ -86,7 +86,7 @@ graph TD
 </div>
 
 <div align="center">
-  <img src="assets/robot_circuit.png" alt="Circuit Schematic" width="100%" />
+  <img src="assets/slide_10_circuit_schematic.png" alt="Circuit Schematic" width="100%" />
   <p><em>Figure 2: Complete Electronic Circuit Schematic & Dual I²C Bus Architecture</em></p>
 </div>
 
@@ -176,9 +176,9 @@ The prototype was subjected to rigorous empirical testing across multiple runs i
       <th align="center">Perimeter Boundary Detection</th>
     </tr>
     <tr>
-      <td align="center"><img src="assets/robot_balancing_test.png" width="240" alt="Upright Balancing Floor Test" /></td>
-      <td align="center"><img src="assets/robot_arena_pushing.png" width="240" alt="Arena Obstacle Pushing" /></td>
-      <td align="center"><img src="assets/robot_arena_boundary.png" width="240" alt="Arena Edge Detection" /></td>
+      <td align="center"><img src="assets/slide_16_balancing_test.png" width="240" alt="Upright Balancing Floor Test" /></td>
+      <td align="center"><img src="assets/slide_17_arena_pushing.png" width="240" alt="Arena Obstacle Pushing" /></td>
+      <td align="center"><img src="assets/slide_17_arena_boundary.png" width="240" alt="Arena Edge Detection" /></td>
     </tr>
     <tr>
       <td align="center"><em>200 Hz PID loop maintaining dynamic vertical equilibrium on laboratory flooring</em></td>
@@ -210,16 +210,16 @@ The ESP32 broadcasts a private Wi-Fi network with an interactive web UI served f
       <th align="center">2. PID Parameter Tuning</th>
     </tr>
     <tr>
-      <td align="center"><img src="assets/robot_dashboard_monitoring.png" width="280" alt="Telemetry Monitoring" /></td>
-      <td align="center"><img src="assets/robot_dashboard_pid.png" width="210" alt="PID Tuning Interface" /></td>
+      <td align="center"><img src="assets/slide_13_dashboard_monitoring.png" width="280" alt="Telemetry Monitoring" /></td>
+      <td align="center"><img src="assets/slide_13_dashboard_pid.png" width="210" alt="PID Tuning Interface" /></td>
     </tr>
     <tr>
       <th align="center">3. Motor & Deadband Calibration</th>
       <th align="center">4. System Maintenance & Logs</th>
     </tr>
     <tr>
-      <td align="center"><img src="assets/robot_dashboard_motor.png" width="210" alt="Motor Calibration" /></td>
-      <td align="center"><img src="assets/robot_dashboard_update.png" width="310" alt="Manual Update Dashboard" /></td>
+      <td align="center"><img src="assets/slide_13_dashboard_motor.png" width="210" alt="Motor Calibration" /></td>
+      <td align="center"><img src="assets/slide_13_dashboard_update.png" width="310" alt="Manual Update Dashboard" /></td>
     </tr>
   </table>
   <p><em>Figure 4: Complete Asynchronous Web Dashboard Suite (Presentation Slide 13) — Live Telemetry, Dynamic PID Tuning, Motor Deadband Calibration, and System Maintenance</em></p>
