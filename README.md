@@ -24,14 +24,32 @@
   <table>
     <tr>
       <th align="center">Front Chassis & Sensing</th>
+      <th align="center">Isometric Prototype View</th>
       <th align="center">Rear Power & Motor Driver</th>
     </tr>
     <tr>
-      <td align="center"><img src="assets/robot_front.png" width="340" alt="Robot Front View" /></td>
-      <td align="center"><img src="assets/robot_back.png" width="340" alt="Robot Rear View" /></td>
+      <td align="center"><img src="assets/robot_front.png" width="240" alt="Robot Front View" /></td>
+      <td align="center"><img src="assets/robot_isometric.png" width="240" alt="Robot Isometric Prototype View" /></td>
+      <td align="center"><img src="assets/robot_back.png" width="240" alt="Robot Rear View" /></td>
     </tr>
   </table>
-  <p><em>Figure 1: Physical Prototype Assembly — Front (MPU-6050 & VL53L0X ToF) and Rear (Dual 18650 Li-ion & TB6612FNG Driver)</em></p>
+  <p><em>Figure 1: Physical Prototype Assembly — Front (Sensing & Chassis), 3/4 Isometric Perspective, and Rear (Dual 18650 Li-ion & TB6612FNG Driver)</em></p>
+</div>
+
+<div align="center">
+
+<details>
+<summary align="center"><b>📐 Click to expand Orthographic Dimension Drawing (Appendix B)</b></summary>
+
+<br/>
+
+<div align="center">
+  <img src="assets/robot_dimension_drawing.png" alt="Orthographic Dimension Drawing" width="460" />
+  <p><em>Chassis Mechanical Orthographic Layout with Millimeter Dimensioning</em></p>
+</div>
+
+</details>
+
 </div>
 
 ---
@@ -164,6 +182,38 @@ stateDiagram-v2
 
 ---
 
+## 🏆 Tournament Trials & Live Testing Verification
+
+The prototype was subjected to rigorous empirical testing across multiple runs in the tournament arena to validate autonomous balancing, obstacle pursuit, and edge containment:
+
+<div align="center">
+  <table>
+    <tr>
+      <th align="center">Autonomous Upright Balance</th>
+      <th align="center">Obstacle Pursuit & Expulsion</th>
+      <th align="center">Perimeter Boundary Detection</th>
+    </tr>
+    <tr>
+      <td align="center"><img src="assets/robot_balancing_test.png" width="240" alt="Upright Balancing Floor Test" /></td>
+      <td align="center"><img src="assets/robot_arena_pushing.png" width="240" alt="Arena Obstacle Pushing" /></td>
+      <td align="center"><img src="assets/robot_arena_boundary.png" width="240" alt="Arena Edge Detection" /></td>
+    </tr>
+    <tr>
+      <td align="center"><em>200 Hz PID loop maintaining dynamic vertical equilibrium on laboratory flooring</em></td>
+      <td align="center"><em>Autonomous target pursuit and expulsion of obstacle (water bottle) at arena boundary</em></td>
+      <td align="center"><em>TCRT5000 IR sensor boundary trigger preventing arena departure during target engagement</em></td>
+    </tr>
+  </table>
+  <p><em>Figure 3: Empirical Validation & Tournament Trials — Autonomous Balancing, Target Pushing, and Boundary Containment</em></p>
+</div>
+
+### Performance Results
+1. **Dynamic Upright Equilibrium:** The discrete PID controller successfully maintained vertical balance within $\pm 1.2^\circ$ under steady-state conditions on flat ground, rapidly recovering from external push disturbances.
+2. **Target Tracking & Pushing Power:** The forward-facing distance sensor detected obstacles reliably up to 300 mm. Upon acquisition, the autonomous state machine applied a dynamic $+3.5^\circ$ forward tilt setpoint offset, providing sustained motor torque to expel obstacles across the tournament perimeter.
+3. **Perimeter Line Containment:** Dual downward-looking infrared reflection sensors continuously monitored ground contrast, instantly detecting the black border line and triggering an automatic 500 ms reverse-pivot routine to keep the robot fully inside the arena.
+
+---
+
 ## 🌐 Embedded Web Dashboard
 
 The ESP32 broadcasts a private Wi-Fi network with an interactive web UI served from flash memory:
@@ -173,7 +223,7 @@ The ESP32 broadcasts a private Wi-Fi network with an interactive web UI served f
 
 <div align="center">
   <img src="assets/robot_dashboard.png" alt="Embedded Web Dashboard" width="380" />
-  <p><em>Figure 3: Live Wi-Fi Telemetry & Dynamic PID Calibration Dashboard (192.168.4.1)</em></p>
+  <p><em>Figure 4: Live Wi-Fi Telemetry & Dynamic PID Calibration Dashboard (192.168.4.1)</em></p>
 </div>
 
 ---
