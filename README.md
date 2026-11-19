@@ -224,6 +224,8 @@ The ESP32 broadcasts a private Wi-Fi network with an interactive web UI served f
 ```
 ESP32_SelfBalancingRobot/
 ├── assets/                            # High-res hardware photos, schematics & dashboard UI
+│   ├── slide_images/                  # Complete set of 38 extracted slide figures & component photos
+│   └── slides/                        # Full 20-slide tournament presentation rendered in 2.4K
 ├── firmware/
 │   └── SelfBalancingRobot/
 │       └── SelfBalancingRobot.ino     # Complete firmware (PID, FSM, Web Dashboard)
